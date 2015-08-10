@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/termsofservice' => 'pages#termsofservice'
   get '/privacypolicy' => 'pages#privacypolicy'
   get '/contact' => 'pages#contact'
+  get '/pricing' => 'pages#pricing'
 
 
   devise_for :users
