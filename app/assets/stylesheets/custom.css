@@ -1,1 +1,13 @@
-body { padding-top: 50px; }
+body {
+  /* top margin for fixed header */
+  padding-top:50px;
+}
+
+.footer {
+  padding-top:10px;
+}
+
+.main {
+	padding-left:30px;
+	padding-right:30px;
+}
