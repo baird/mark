@@ -5,11 +5,10 @@ Rails.application.routes.draw do
 
   get '/about' => 'pages#about'
   get '/howitworks' => 'pages#howitworks'
+  get '/pricing' => 'pages#pricing'
+  get '/contact' => 'pages#contact'
   get '/termsofservice' => 'pages#termsofservice'
   get '/privacypolicy' => 'pages#privacypolicy'
-  get '/contact' => 'pages#contact'
-  get '/pricing' => 'pages#pricing'
-
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.

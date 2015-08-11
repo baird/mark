@@ -6,16 +6,16 @@ class PagesController < ApplicationController
   def howitworks
   end
 
-  def termsofservice
-  end
-
-  def privacypolicy
+  def pricing
   end
 
   def contact
   end
 
-  def pricing
+  def termsofservice
+  end
+
+  def privacypolicy
   end
 
 end
