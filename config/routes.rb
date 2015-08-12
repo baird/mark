@@ -10,8 +10,8 @@ Rails.application.routes.draw do
   get '/termsofservice' => 'pages#termsofservice'
   get '/privacypolicy' => 'pages#privacypolicy'
 
-  devise_for :users, :controllers => { registrations: 'registrations' }
-  devise_for :sellers, :controllers => { registrations: 'registrations' }
+  devise_for :users, :controllers => { registrations: 'user_registrations' }
+  devise_for :sellers, :controllers => { registrations: 'seller_registrations' }
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
