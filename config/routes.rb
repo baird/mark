@@ -11,7 +11,8 @@ Rails.application.routes.draw do
   get '/privacypolicy' => 'pages#privacypolicy'
 
   devise_for :users, :controllers => { registrations: 'user_registrations' }
-  devise_for :sellers, :controllers => { registrations: 'seller_registrations' }
+  devise_for :sellers, :controllers => { :registrations => 'sellers/registrations'}
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

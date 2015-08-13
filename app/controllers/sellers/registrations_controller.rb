@@ -1,6 +1,6 @@
-class SellerRegistrationsController < Devise::RegistrationsController
+class Sellers::RegistrationsController < Devise::RegistrationsController
 
-  private
+private
 
   def sign_up_params
     params.require(:seller).permit(:first_name, :last_name, :email, :password, :password_confirmation)
