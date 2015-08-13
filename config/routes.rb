@@ -10,6 +10,10 @@ Rails.application.routes.draw do
   get '/termsofservice' => 'pages#termsofservice'
   get '/privacypolicy' => 'pages#privacypolicy'
 
+  # dashboard
+
+  get '/dashboard' => 'dashboard#index'
+
   devise_for :users, :controllers => { registrations: 'user_registrations' }
   devise_for :sellers, :controllers => { :registrations => 'sellers/registrations'}
 
